@@ -24,7 +24,7 @@ export default function Register() {
     console.log("Login data:", form);
 
     try{
-let responce = await axios.post("http://localhost:8080/signup",form)
+let responce = await axios.post("https://assigment-v3sb.onrender.com/signup",form)
 if(responce){
   alert(responce.data.message)
 
