@@ -23,7 +23,7 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try{
-  let responce = await axios.post("http://localhost:8080/login",form)
+  let responce = await axios.post("https://assigment-v3sb.onrender.com/login",form)
   if(responce){
     localStorage.setItem('token',responce.data.token)
   alert(responce.data.message)
@@ -38,7 +38,7 @@ const config = {
   },
 };
 
-let data = await axios.post("http://localhost:8080/ifprofile", {}, config);
+let data = await axios.post("https://assigment-v3sb.onrender.com/ifprofile", {}, config);
 console.log(data.data.success)
  localStorage.setItem('username',data.data.username)
 if(data.data.success){
