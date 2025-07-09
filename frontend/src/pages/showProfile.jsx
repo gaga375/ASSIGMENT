@@ -16,11 +16,11 @@ export default function ProfilePage() {
           },
         };
 
-        let data = await axios.post("http://localhost:8080/ifprofile", {}, config);
+        let data = await axios.post("https://assigment-v3sb.onrender.com/ifprofile", {}, config);
 console.log(data.data.success)
      
 if(data.data.success){
- let response = await axios.post('http://localhost:8080/userdatasent', {}, config);
+ let response = await axios.post('https://assigment-v3sb.onrender.com/userdatasent', {}, config);
         console.log(response)
         setData(response.data.data);
 }
