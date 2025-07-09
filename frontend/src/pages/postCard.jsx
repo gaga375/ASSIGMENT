@@ -8,8 +8,8 @@ export default function PostCard() {
     // fetch all posts from backend
     const fetchPosts = async () => {
       try {
-        const res = await axios.get("http://localhost:8080/allpost");
-        setPosts(res.data.data); // assuming data is in res.data.data
+        const res = await axios.get("https://assigment-v3sb.onrender.com/allpost");
+        setPosts(res.data.data); 
       } catch (err) {
         console.error("Error fetching posts:", err);
       }
