@@ -42,7 +42,7 @@ const token = localStorage.getItem("token");
  
    
    
-const res = await axios.post("http://localhost:8080/post", form, {
+const res = await axios.post("https://assigment-v3sb.onrender.com/post", form, {
   headers: {
     Authorization: `Bearer ${token}`,
  
