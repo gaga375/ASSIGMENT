@@ -29,7 +29,7 @@ const config = {
   },
 };
 console.log("submit workng")
-let data = await axios.post("http://localhost:8080/profile", {profile}, config);
+let data = await axios.post("https://assigment-v3sb.onrender.com/profile", {profile}, config);
 if(! data.data.success){
 navigate('/')
 }
